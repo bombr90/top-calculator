@@ -1,0 +1,103 @@
+/*style.css*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 24px;
+    font-family: 'Courier New', 'Lucida Console', Monaco;
+}
+
+#main-container,
+#wrapper {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:16px; 
+}
+
+#wrapper,
+#display,
+button,
+.row {
+    flex:1;
+}
+
+#wrapper    {
+    width: 300px;
+    min-height: 400px;
+    gap: 8px;
+    background-color: lightslategray;
+    border: 4px solid gray;
+    box-shadow: 8px 8px 16px 0 #00000033;
+}
+
+#display    {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    min-height:80px;
+    padding: 8px;
+    border: 2px solid gray;
+
+    background-color: lightgray;
+}
+
+p,
+span    {
+    width: 100%;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+button    {
+    font-size: 36px;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: lightgray;
+    color: white;
+  }
+
+.row    {
+    display: flex;
+    width: 100%;
+    gap: 8px;
+    justify-content:space-between;  
+}
+
+.opr    {
+    background-color: darkorange ;
+    color: slategray;
+}
+
+.func   {
+    background-color: lightgray;
+    color:darkslategrey;
+}
+.double {
+    flex-grow: 2;
+}
+.bold   {
+    font-weight: 700;
+}
+
+.error  {
+    background-color: red;
+    color: lightgray;
+    font-weight: 700;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+.last-click {
+    font-weight: 700;
+    background-color: lightgreen;
+}
