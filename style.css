@@ -42,15 +42,15 @@ button,
     min-height:80px;
     padding: 8px;
     border: 2px solid gray;
-
     background-color: lightgray;
+    overflow-wrap: break-word;
+    text-align:right;
 }
 
-p,
 span    {
     width: 100%;
-    text-align: right;
-    word-wrap: break-word;
+    text-align:center;
+    overflow-wrap: break-word;
 }
 
 button    {
